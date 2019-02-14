@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "debug": false,
+                "modules": "umd",
+                "targets": { "esmodules": true }
+            }
+        ]
+    ],
+    "plugins": [
+        ["@babel/plugin-syntax-flow"],
+        ["@babel/plugin-transform-flow-strip-types"],
+        ["@babel/plugin-transform-runtime"],
+        ["@babel/plugin-proposal-optional-chaining"],
+        ["transform-object-assign"],
+        ["transform-object-rest-spread"],
+        ["syntax-dynamic-import"],
+        ["transform-es2015-computed-properties"]
+    ]
+}
